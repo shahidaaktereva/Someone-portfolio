@@ -192,3 +192,65 @@ input{
 .contact a{
     text-decoration: none;
 }
+
+/* Responsive styles  */
+
+@media screen and (max-width:576px) {
+    .skills-container, 
+    .resume-contant, 
+    .about-info-container, 
+    .contact, 
+    nav,
+    .banner{
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+    }
+    nav{
+        padding: 10px;
+    }
+    nav li{
+        margin: 0px;
+    }
+    .banner{
+        margin: 5px 10px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .header{
+        background-image: none;
+    }
+    .about, .contact{
+        padding: 20px;
+    }
+    .section-para{
+        margin: 20px;
+    }
+    .contact input[type="text"],input[type="email"], textarea{
+        padding: 0px 0px 0px 5px;
+    }
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+    .about, .contact{
+        padding: 20px 50px;
+    }
+    .contact, .banner{
+        flex-direction: column;
+    }
+    .contact input[type="text"],input[type="email"], textarea{
+        padding: 0px 0px 0px 5px;
+    }
+    .resume-contant{
+        padding: 10px 50px;
+    }
+    .skills-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
